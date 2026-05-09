@@ -1,0 +1,116 @@
+{
+  "timestamp": "2026-05-07T02:39:15.719539",
+  "technical": {
+    "agent": "technical",
+    "timestamp": "2026-05-07T02:39:15.719463",
+    "price": 76099,
+    "indicators": [
+      {
+        "indicator": "RSI_14",
+        "signal": "NEUTRAL_BULLISH",
+        "weight": 0.08
+      },
+      {
+        "indicator": "PRICE_VS_EMA200",
+        "signal": "BELOW_EMA",
+        "weight": -0.1
+      },
+      {
+        "indicator": "NEAR_RESISTANCE",
+        "signal": "STRONG_RESISTANCE",
+        "weight": -0.15
+      },
+      {
+        "indicator": "VOLUME",
+        "signal": "ELEVATED_VOLUME",
+        "weight": 0.05
+      }
+    ],
+    "signal": "NEUTRAL",
+    "score": 0.44,
+    "confidence": 0.65,
+    "key_levels": {
+      "support": 68900,
+      "resistance": 75000,
+      "ema_200": 82919
+    },
+    "summary": "RSI 54 neutral. Price below 200 EMA (82,919). Near support 68,900. Range-bound between 68,900 and 75,000."
+  },
+  "onchain": {
+    "agent": "onchain",
+    "timestamp": "2026-05-07T02:39:15.719497",
+    "metrics": {
+      "mvrv": 1.5,
+      "realized_price_floor": 50000,
+      "realized_price_ceiling": 62000,
+      "exchange_reserves_pct": 11.9,
+      "etf_flows_q1_2026_billions": 2.5,
+      "supply_in_profit_pct": 60,
+      "accumulation_trend_score": 0.45,
+      "btc_price_now": 76099
+    },
+    "signal": "BULLISH",
+    "score": 0.8,
+    "confidence": 0.708,
+    "key_indicators": {
+      "mvrv": "1.5 (fair value)",
+      "realized_price_floor": "$50,000",
+      "exchange_reserves": "11.9% (7-year low)",
+      "etf_flows_q1": "$2.5B",
+      "supply_in_profit": "60%"
+    },
+    "summary": "MVRV 1.5 indicates fair value. Price above realized floor $50,000. Exchange reserves at 11.9% (7-year low). Q1 2026 ETF inflows $2.5B (institutions buying correction)."
+  },
+  "macro": {
+    "agent": "macro",
+    "timestamp": "2026-05-07T02:39:15.719522",
+    "metrics": {
+      "btc_spx_correlation": 0.74,
+      "dxy": 98.7,
+      "fed_rate_cut_timing": "2027",
+      "iran_war_risk": "elevated",
+      "sp500_at_record_highs": true
+    },
+    "signal": "BULLISH",
+    "score": 0.75,
+    "confidence": 0.694,
+    "key_factors": {
+      "correlation": "BTC-S&P500 0.74 (high - trades like equity)",
+      "dollar": "DXY 98.7 (elevated - headwind for BTC)",
+      "fed_timing": "Rate cuts pushed to 2027",
+      "geopolitical": "Iran war risk elevated, Strait of Hormuz",
+      "equities": "S&P500 and Nasdaq at record highs (risk-on)"
+    },
+    "summary": "BTC-S&P500 correlation 0.74 - BTC tracking equities. DXY 98.7 elevated (dollar headwind). Fed rate cuts delayed to 2027. S&P500/Nasdaq at record highs = risk-on backdrop. BTC more resilient than oil/equities to Iran shocks."
+  },
+  "final_signal": {
+    "timestamp": "2026-05-07T02:39:15.719539",
+    "signal_type": "BUY",
+    "total_score": 0.662,
+    "confidence": 0.684,
+    "action": "Take partial position (25-50% of capital)",
+    "current_price": 76099,
+    "agent_scores": {
+      "technical": 0.44,
+      "onchain": 0.8,
+      "macro": 0.75
+    },
+    "weighted_contribution": {
+      "technical": 0.154,
+      "onchain": 0.32,
+      "macro": 0.188
+    },
+    "key_drivers": [
+      "On-Chain: bullish (0.8)",
+      "Macro: bullish (0.75)"
+    ],
+    "risk_factors": [],
+    "levels": {
+      "support": 68900,
+      "resistance": 75000,
+      "ema_200": 82919,
+      "ath": 125835
+    },
+    "summary": "BUY signal. Score: 0.66. Take partial position (25-50% of capital)."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-05-07T02:39:15.719539",
+  "signal_type": "BUY",
+  "total_score": 0.662,
+  "confidence": 0.684,
+  "action": "Take partial position (25-50% of capital)",
+  "current_price": 76099,
+  "agent_scores": {
+    "technical": 0.44,
+    "onchain": 0.8,
+    "macro": 0.75
+  },
+  "weighted_contribution": {
+    "technical": 0.154,
+    "onchain": 0.32,
+    "macro": 0.188
+  },
+  "key_drivers": [
+    "On-Chain: bullish (0.8)",
+    "Macro: bullish (0.75)"
+  ],
+  "risk_factors": [],
+  "levels": {
+    "support": 68900,
+    "resistance": 75000,
+    "ema_200": 82919,
+    "ath": 125835
+  },
+  "summary": "BUY signal. Score: 0.66. Take partial position (25-50% of capital)."
+}
